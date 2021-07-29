@@ -1,0 +1,6 @@
+<app-product
+  (deleted)="deleteProduct($event)"
+  (edited)="saveProduct($event)"
+  [product]="product"
+  *ngFor="let product of products; index as index"
+></app-product>

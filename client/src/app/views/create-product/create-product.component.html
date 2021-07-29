@@ -1,0 +1,11 @@
+<span class="p-float-label p-input-filled">
+  <input class="input-title" type="text" pInputText [(ngModel)]="title" />
+  <label for="input-title">Title can't be empty</label>
+  <button
+    type="button"
+    pButton
+    label="Submit"
+    (click)="submit()"
+    [disabled]="title.length === 0"
+  ></button>
+</span>

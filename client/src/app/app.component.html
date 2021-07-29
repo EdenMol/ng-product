@@ -1,0 +1,5 @@
+<button pButton type="button" (click)="navigate()">
+  {{ window.location.href.includes("create-product") ? "Back" : "Add" }}
+</button>
+
+<router-outlet></router-outlet>
